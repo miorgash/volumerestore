@@ -1,6 +1,5 @@
 ```
-VOLUME_NAME=fever-data
-FILE_NAME=fever-data-20201013054353.tar.gz
-sudo docker run --rm -v $VOLUME_NAME:/target -v $PWD:/import -e TARGETFILE=$FILE_NAME miorgash/volumerestore
+# 挙動あやしいので次回利用前に動作確認
+sudo docker run --rm -v fever-data:/target -v `pwd`:/import miorgash/volumerestore
 ```
 Copy of [74th](https://qiita.com/74th/items/41393f506d223850f2c3)

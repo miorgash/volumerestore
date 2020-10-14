@@ -1,4 +1,4 @@
-FROM miorgash/fever-config:latest
+FROM ubuntu:18.04
 
 ADD ./restore.sh /root/
 WORKDIR /target
